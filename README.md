@@ -8,7 +8,7 @@
 <h4>Google Kubernetes Engine (GKE) is a managed service for Kubernetes.</h4>
 
 ## 📚 Table of Contents
-[📜 Notes](#-notes)
+[📝 Object Oriented Programming](#object-oriented-programming)
 
 sd
 <br>s
@@ -27,7 +27,7 @@ sa
 dfasf
 
 
-## 📜 Notes
+## Object Oriented Programming
 - #### 📝 Object-Oriented Programming
 
 <style>
