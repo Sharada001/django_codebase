@@ -8,7 +8,7 @@
 <h4>Google Kubernetes Engine (GKE) is a managed service for Kubernetes.</h4>
 
 ## 📚 Table of Contents
-- [📜 Notes](#-notes)
+[📜 Notes](#-notes)
 
 sd
 <br>s
