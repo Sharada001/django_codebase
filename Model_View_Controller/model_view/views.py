@@ -1,11 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from model_view.models import Food
+from django.utils.html import escape
 
 # Create your views here.
 def sendPrice(request,codeNum):
-    querySet = Food.objects.filter(code=codeNum).values()
-    itemsList = list(querySet)
-    if len(itemsList) == 1:
-        return HttpResponse("Item : "+itemsList[0]['name']+"    Price : "+str(itemsList[0]['price']) )
-    return HttpResponse("Invalid Code !")
+    try :
+        obj = Food.objects.get(code=codeNum)
+    except Exception as ex:
+        return HttpResponse("Invalid Code !")
+    return HttpResponse("Item : "+escape(obj.name)+"    Price : "+str(escape(obj.price)) )
