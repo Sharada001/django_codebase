@@ -3,8 +3,10 @@
 <head></head>
 
 <body>
-<h2> {{ view_name }} </h2>
-<a href="{% url 'homepage:main_view' %}">Go To Main View</a>
+
+<h2>View Name : {{ view_name }} </h2>
+<a href="{% url 'homepage:main_view' %}">Go To Main View</a><br>
+<a href="{% url 'homepage:param_view' 56 %}">Go To Param View</a>
 </body>
 
 </html>
