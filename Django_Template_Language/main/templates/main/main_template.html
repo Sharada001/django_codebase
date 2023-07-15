@@ -1,0 +1,29 @@
+<html>
+<head></head>
+
+<body>
+<h1>Employee List</h1>
+
+<h3>{{ sp_Person.name }} is the current {{ sp_Person.role }}</h3>
+
+{% if list_of_people|length > 0 %}
+    <ul>
+    {% for name in list_of_people %}
+    <li><h4>{{ name }}</h4></li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+<h4>Productivity is
+{% if productivity > 80 %}
+    good
+{% elif productivity > 40 %}
+    moderate
+{% else %}
+    insufficient
+{%  endif %}
+</h4>
+
+</body>
+
+</html>
