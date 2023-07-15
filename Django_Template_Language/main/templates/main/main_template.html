@@ -4,6 +4,9 @@
 <body>
 <h1>Employee List</h1>
 
+{% block block1 %}
+{% endblock %}
+
 <h3>{{ sp_Person.name }} is the current {{ sp_Person.role }}</h3>
 
 {% if list_of_people|length > 0 %}
@@ -23,6 +26,9 @@
     insufficient
 {%  endif %}
 </h4>
+
+{% block block2 %}
+{% endblock %}
 
 </body>
 
